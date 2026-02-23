@@ -9,6 +9,6 @@ def draw_curved_edges(G, pos, ax, curve_scale=0.2, node_size=300):
     for u, v in G.edges():
         rad = curve_scale if (u, v) in G.edges() and (v, u) in G.edges() else 0
         arrow = FancyArrowPatch(pos[u], pos[v], connectionstyle=f"arc3,rad={rad}",
-                                arrowstyle="->", color="blue", mutation_scale=15, lw=1.5,
+                                arrowstyle="-|>", color="blue", mutation_scale=12, lw=1.0,
                                 shrinkA=node_radius, shrinkB=node_radius)
         ax.add_patch(arrow)
