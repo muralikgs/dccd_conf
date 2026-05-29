@@ -48,7 +48,7 @@ model_params = {
     "rho" : 1e-1,
     "adj_threshold" : 0.7,
     "cov_threshold" : 5e-2,
-    "llc_adj_threshold" : 0.15
+    "llc_adj_threshold" : 0.22
 }
 
 eval_params = {

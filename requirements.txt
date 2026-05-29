@@ -8,3 +8,4 @@ dagma
 termcolor
 torch
 scikit-learn
+pyarrow

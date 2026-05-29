@@ -118,7 +118,7 @@ class SEM:
             if fixed_intervention:
                 C[intervention_set, :] = np.random.randn(len(intervention_set), 1)
             else:
-                C[intervention_set, :] = 2.0 * np.random.randn(len(intervention_set), n_samples)
+                C[intervention_set, :] = 2.5 * np.random.randn(len(intervention_set), n_samples)
 
         I = np.eye(self.n_nodes)
         if lat_provided:
